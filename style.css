@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::selection {
+    color: white;
+    background-color: #3b82f6;
+}
+
+body {
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.morphine {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.2px);
+    -webkit-backdrop-filter: blur(14.2px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+.judul {
+    font-size: 30px;
+    font-weight: 600;
+    color: #334155;
+    letter-spacing: 2px;
+    margin: 30px 0px;
+}
+
+.todo-list {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    width: 450px;
+    padding: 20px;
+}
+
+.kepala-todo {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.masuk-list {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #94a3b8;
+    font-size: 15px;
+    outline: none;
+    cursor: text;
+    background-color: #cbd5e1;
+}
+
+.masuk-list:focus {
+    outline: solid #a5b4fc;
+}
+
+.tambah-list {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    ;
+    pointer-events: none;
+}
+
+.tambah-list:hover {
+    background-color: #94a3b8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tambah-list:active {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tugas {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.items {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #a5b4fc;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items p {
+    color: #f1f5f9;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.items.lengkap p {
+    text-decoration: line-through;
+    color: #f1f5f9;
+}
+
+.fa-check {
+    color: #14b8a6;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-circle-xmark {
+    color: #dc2626;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tbl-item i:hover {
+    transform: scale(150%);
+    transition-duration: 0.4s;
+    transition: all;
+}
+
+.tbl-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
