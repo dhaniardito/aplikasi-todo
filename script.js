@@ -24,8 +24,8 @@ tblTambah.addEventListener('click', () => {
     itemBaru.classList.add('items');
     itemBaru.innerHTML = ` <p> ${masuk.value} </p>
             <div class="tbl-item">
-             <i class="fa-solid fa-check"></i>
-              <i class="fa-solid fa-circle-xmark"></i>
+            <i title="Tugas Sudah Selesai" class="fa-solid fa-check"></i>
+             <i title="Hapus Tugas" class="fa-solid fa-trash"></i>
             </div>`
     tugas.appendChild(itemBaru);
     masuk.value = '';
